@@ -1,14 +1,14 @@
 {
   "name": "tool-bar-expert",
   "main": "./lib/tool-bar-expert",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A short description of your package",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "tool-bar-expert:toggle"
   },
-  "repository": "https://github.com/atom/tool-bar-expert",
+  "repository": "https://github.com/rjousse18/tool-bar-expert",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
