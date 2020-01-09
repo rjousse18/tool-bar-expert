@@ -31,6 +31,24 @@ module.exports =
           'iconset': 'icomoon'
 
     @toolBar.addSpacer()
+    if atom.packages.loadedPackages['project-manager']
+      @toolBar.addButton
+          'icon': 'folder-download'
+          'callback': 'project-manager:list-projects'
+          'tooltip': 'Project manager : list projects'
+          'iconset': 'icomoon'
+      @toolBar.addButton
+          'icon': 'folder-plus'
+          'callback': 'project-manager:save-project'
+          'tooltip': 'Project manager : save project'
+          'iconset': 'icomoon'
+      @toolBar.addButton
+          'icon': 'pencil'
+          'callback': 'project-manager:edit-project'
+          'tooltip': 'Project manager : edit project'
+          'iconset': 'icomoon'
+
+    @toolBar.addSpacer()
 
     @toolBar.addButton
       'icon': 'columns'
@@ -44,8 +62,6 @@ module.exports =
       'tooltip': 'Split screen - Vertically'
       'callback': 'pane:split-down'
     btn.element.classList.add 'fa-rotate-270'
-
-    @toolBar.addSpacer()
 
     @toolBar.addButton
       'iconset': 'fa'
