@@ -6,31 +6,26 @@ module.exports =
     @toolBar = toolBar 'tool-bar-expert'
 
     @toolBar.addButton
-      icon: 'folder'
+      icon: 'file-empty'
       callback: 'application:open-file'
       tooltip: 'Open File...'
       iconset: 'icomoon'
 
     @toolBar.addButton
-      icon: 'folder-plus'
+      icon: 'folder-open'
       callback: 'application:open-folder'
       tooltip: 'Open Folder...'
       iconset: 'icomoon'
 
     @toolBar.addButton
-      icon: 'checkmark'
+      icon: 'content-save'
       callback: 'core:save'
       tooltip: 'Save File'
-      iconset: 'icomoon'
+      iconset: 'mdi'
 
     if atom.packages.loadedPackages['file-explorer']
       @toolBar.addButton
-          'icon': 'folder-open'
-          'callback': 'file-explorer:toggle-current-directory'
-          'tooltip': 'File Explorer : current directory'
-          'iconset': 'icomoon'
-      @toolBar.addButton
-          'icon': 'folder-open'
+          'icon': 'search'
           'callback': 'file-explorer:toggle-home-directory'
           'tooltip': 'File Explorer : project root directory'
           'iconset': 'icomoon'
