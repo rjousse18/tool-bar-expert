@@ -19,15 +19,16 @@ Various buttons with multiple functions :
 - Open file
 - Open folder
 - Save file
-- File explorer root directory (with file-explorer package)
+- File explorer root directory (with file-explorer)
 - Split / toggle screen
 - Expose
 - Auto ident
-- Atom beautify (with atom-beautify package)
+- Atom beautify (with atom-beautify)
 - Platformio-ide-terminal
 - Markdown preview
-- Generate getters and setters php (with php-getters-setters package)
-- Color picker (with package color-picker)
-- Ask stack (with package ask-stack)
-- Command palette and settigns access
-- **New !** Project manager : edit, save and list projects
+- Generate getters and setters php (with php-getters-setters)
+- Color picker (with color-picker)
+- Ask stack (with ask-stack)
+- Command palette and settings access
+- Project manager : edit, save and list projects (with project-manager)
+- **New !** Symbols tree nav integration !

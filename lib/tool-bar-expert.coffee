@@ -222,13 +222,17 @@ module.exports =
           'callback': 'color-picker:open'
           'tooltip': 'Color Picker'
           'iconset': 'icomoon'
-
     if atom.packages.loadedPackages['ask-stack']
-        @toolBar.addSpacer()
         @toolBar.addButton
           'icon': 'stackoverflow'
           'callback': 'ask-stack:ask-question'
           'tooltip': 'AskStack'
+          'iconset': 'icomoon'
+    if atom.packages.loadedPackages['symbols-tree-nav']
+        @toolBar.addButton
+          'icon': 'list2'
+          'callback': 'symbols-tree-nav:toggle'
+          'tooltip': 'Show Symbols Tree'
           'iconset': 'icomoon'
 
     @toolBar.addSpacer()
