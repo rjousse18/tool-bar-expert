@@ -102,6 +102,13 @@ module.exports =
         'tooltip': 'Beautify'
         'iconset': 'fa'
 
+    if atom.packages.loadedPackages['atom-css-clean']
+        @toolBar.addButton
+            'icon': 'css3'
+            'callback': 'css-clean:convert'
+            'tooltip': 'CSS clean'
+            'iconset': 'icomoon'
+
     if atom.packages.loadedPackages['term3']
       @toolBar.addSpacer()
       @toolBar.addButton
