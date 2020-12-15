@@ -213,13 +213,13 @@ module.exports =
            'iconset': 'icomoon'
 
     if atom.packages.loadedPackages['java-generator']
-        @toolbar.addSpacer()
-        @toolbar.addButton
+        @toolBar.addSpacer()
+        @toolBar.addButton
             'icon': 'list'
             'callback': 'java-generator:generate-getters-setters'
             'tooltip': 'JAVA GetSet'
             'iconset': 'fa'
-        @toolbar.addButton
+        @toolBar.addButton
             'icon': 'stream'
             'callback': 'java-generator:generate-constructor'
             'tooltip': 'JAVA Constructor'
