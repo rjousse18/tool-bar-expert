@@ -182,7 +182,7 @@ module.exports =
         'tooltip': 'Stop script'
         'iconset': 'fa'
       @toolBar.addButton
-        'icon': 'gear'
+        'icon': 'cogs'
         'callback': 'script:run-options'
         'tooltip': 'Configure script'
         'iconset': 'fa'
