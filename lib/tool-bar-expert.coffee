@@ -204,23 +204,26 @@ module.exports =
          @toolBar.addButton
            'icon': 'paragraph-justify'
            'callback': 'php-getters-setters:showUI'
-           'tooltip': 'GetSet : ShowUI'
+           'tooltip': 'PHP GetSet : ShowUI'
            'iconset': 'icomoon'
          @toolBar.addButton
            'icon': 'menu2'
            'callback': 'php-getters-setters:allGettersSetter'
-           'tooltip': 'GetSet : All'
+           'tooltip': 'PHP GetSet : All'
            'iconset': 'icomoon'
-         @toolBar.addButton
-           'icon': 'menu3'
-           'callback': 'php-getters-setters:allGetters'
-           'tooltip': 'GetSet : Getters'
-           'iconset': 'icomoon'
-         @toolBar.addButton
-           'icon': 'menu4'
-           'callback': 'php-getters-setters:allSetters'
-           'tooltip': 'GetSet : Setters'
-           'iconset': 'icomoon'
+
+    if atom.packages.loadedPackages['java-generator']
+        @toolbar.addSpacer()
+        @toolbar.addButton
+            'icon': 'list'
+            'callback': 'java-generator:generate-getters-setters'
+            'tooltip': 'JAVA GetSet'
+            'iconset': 'fa'
+        @toolbar.addButton
+            'icon': 'stream'
+            'callback': 'java-generator:generate-constructor'
+            'tooltip': 'JAVA Constructor'
+            'iconset': 'fa'
 
     if atom.packages.loadedPackages['color-picker']
         @toolBar.addSpacer()
