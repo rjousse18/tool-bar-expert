@@ -97,10 +97,23 @@ module.exports =
 
     if atom.packages.loadedPackages['atom-beautify']
       @toolBar.addButton
-        'icon': 'star'
+        'icon': 'code'
         'callback': 'atom-beautify:beautify-editor'
         'tooltip': 'Beautify'
         'iconset': 'fa'
+
+    if atom.packages.loadedPackages['atom-ide-code-format']
+      @toolBar.addButton
+        'icon': 'code'
+        'callback': 'code-format:format-code'
+        'tooltip': 'Format (atom-ide-code-format)'
+        'iconset': 'fa'
+
+    if atom.packages.loadedPackages['atom-ide-code-format']
+      @toolBar.addButton
+        'icon': 'octostar'
+        'callback': 'code-format:format-code'
+        'tooltip': 'Format (atom-ide-code-format)'
 
     if atom.packages.loadedPackages['atom-css-clean']
         @toolBar.addButton
