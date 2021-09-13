@@ -109,12 +109,6 @@ module.exports =
         'tooltip': 'Format (atom-ide-code-format)'
         'iconset': 'fa'
 
-    if atom.packages.loadedPackages['atom-ide-code-format']
-      @toolBar.addButton
-        'icon': 'octostar'
-        'callback': 'code-format:format-code'
-        'tooltip': 'Format (atom-ide-code-format)'
-
     if atom.packages.loadedPackages['atom-css-clean']
         @toolBar.addButton
             'icon': 'css3'
